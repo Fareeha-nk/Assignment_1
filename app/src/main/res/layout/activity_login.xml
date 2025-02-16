@@ -14,7 +14,7 @@
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_marginTop="100dp"
-            android:layout_marginStart="120dp"
+            android:layout_marginStart="130dp"
             app:cardCornerRadius="80dp">
 
         <ImageView
@@ -30,13 +30,59 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:layout_marginStart="10dp"
-        android:text="Enter your name"
+        android:text="@string/enter_name"
         android:textColor="@color/white"
         />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        >
+
+        <EditText
+            android:id="@+id/login_name"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:autofillHints="true"
+            android:background="@android:color/transparent"
+            android:paddingHorizontal="20dp"
+            android:text="@string/name_on_placeholder"
+            android:textColor="@color/white"
+
+            >
+
+        </EditText>
+        
+
+    </androidx.cardview.widget.CardView>
     
-    <EditText
-        android:layout_width=""
-        android:layout_height=""
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_gravity="center"
+            android:text="@string/btnStart"
+            android:backgroundTint="@color/yellow"
+
+            >
+
+
+        </Button>
+
+
+
+
+
+
 
 
 
