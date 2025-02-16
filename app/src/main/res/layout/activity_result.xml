@@ -1,10 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Result">
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    >
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/prev_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/prev_button_white">
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/scoreboard"
+            android:textColor="@color/white"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/username_result"
+            android:id="@+id/username_result"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:textColor="@color/dark_green">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:layout_marginStart="190dp"
+            android:text="@string/tvCorrect_answers"
+            android:id="@+id/question_number"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:text="@string/score_bar"
+            android:id="@+id/score_separator"
+            android:layout_toRightOf="@id/question_number"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:text="@string/total_questions"
+            android:id="@+id/total_questions"
+            android:layout_toRightOf="@id/score_separator"
+            />
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@drawable/curve_result_page">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/btnShare_your_result"
+            android:backgroundTint="@color/dark_green"
+            android:layout_marginTop="120dp"
+            android:id="@+id/ShareResult"
+            android:layout_marginStart="130dp">
+        </Button>
+        
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -42,7 +42,7 @@ public class Login extends AppCompatActivity {
             public void onClick(View v) {
                 String username= login_placeholder.getText().toString().trim();
 
-                if (username.length() < 3 || username.length() > 20 ){
+                if (username.length() < 3 || username.length() > 20 || username.isEmpty()){
                     Toast.makeText(Login.this, "Username must be between 3 and 20 length", Toast.LENGTH_SHORT).show();
                     return;
                 }
@@ -50,6 +50,7 @@ public class Login extends AppCompatActivity {
                 Intent i= new Intent(Login.this, Quiz.class);
                     i.putExtra("username", username);
                     startActivity(i);
+                    finish();
             }
         });
 
