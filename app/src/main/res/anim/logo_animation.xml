@@ -7,14 +7,14 @@
             android:toXDelta="0"
             android:repeatCount="-1"
             android:repeatMode="restart"
-            android:duration="5000"
+            android:duration="2000"
             android:visibility="visible"
             />
 
         <alpha
             android:fromAlpha="0.1"
             android:toAlpha="1.0"
-            android:duration="5000"
+            android:duration="2000"
             />
 
 </set>

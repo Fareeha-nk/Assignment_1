@@ -3,4 +3,13 @@
     <string name="enter_name">Enter your name</string>
     <string name="name_on_placeholder">Joe</string>
     <string name="btnStart">Start</string>
+    <string name="str_previous">Previous</string>
+    <string name="tvQuestionNumber">_0</string>
+    <string name="score_bar">bar</string>
+    <string name="total_questions">total questions</string>
+    <string name="question_info">Question1:</string>
+    <string name="rb_option1">Option1</string>
+    <string name="rb_option2">Option2</string>
+    <string name="rb_option3">Option3</string>
+    <string name="next">Next</string>
 </resources>
