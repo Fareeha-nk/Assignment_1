@@ -5,11 +5,15 @@
     <string name="btnStart">Start</string>
     <string name="str_previous">Previous</string>
     <string name="tvQuestionNumber">_0</string>
-    <string name="score_bar">bar</string>
-    <string name="total_questions">total questions</string>
+    <string name="score_bar">/</string>
+    <string name="total_questions">10</string>
     <string name="question_info">Question1:</string>
     <string name="rb_option1">Option1</string>
     <string name="rb_option2">Option2</string>
     <string name="rb_option3">Option3</string>
     <string name="next">Next</string>
+    <string name="scoreboard">Scoreboard</string>
+    <string name="username_result">John Doe</string>
+    <string name="tvCorrect_answers">6</string>
+    <string name="option4">Option4</string>
 </resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Selected state (Dark Green) -->
+    <item android:state_checked="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/green"/> <!-- Dark green when selected -->
+            <corners android:radius="20dp"/> <!-- Rounded corners -->
+            <padding android:left="15dp" android:right="15dp"/>
+        </shape>
+    </item>
+
+    <!-- Default state (Light Green) -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/light_green"/> <!-- Light green by default -->
+            <corners android:radius="20dp"/>
+            <padding android:left="15dp" android:right="15dp"/>
+        </shape>
+    </item>
+
+</selector>
