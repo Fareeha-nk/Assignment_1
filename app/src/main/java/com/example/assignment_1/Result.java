@@ -62,6 +62,7 @@ public class Result extends AppCompatActivity {
             intent.launch(shareIntent);
         });
 
+
         String username= getIntent().getStringExtra("username");
         tvUsername_Result.setText(username);
         int score= getIntent().getIntExtra("score", 0);
